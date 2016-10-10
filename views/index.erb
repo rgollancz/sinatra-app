@@ -2,3 +2,11 @@
 <div style='border: 3px dashed red'>
 <img src='http://static.boredpanda.com/blog/wp-content/uploads/2016/03/naked-guinea-pig-food-photoshoot-ludwik-54__700.jpg'>
 </div>
+<% if !@name %>
+<form action="/named-ludwig">
+  <div>
+    <input type="text" name="name" />
+    <input type="submit" value="submit" />
+  </div>
+</form>
+<% end %>

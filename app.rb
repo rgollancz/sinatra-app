@@ -18,6 +18,6 @@ get '/random-ludwig' do
 end
 
 get '/named-ludwig' do
-  @name = params[:name] ||= "Ludwig"
+  @name = params[:name]
   erb(:index)
 end
