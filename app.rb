@@ -12,7 +12,12 @@ get '/julio' do
   "Dog boi"
 end
 
-get '/cat' do
+get '/random-ludwig' do
   @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get '/named-ludwig' do
+  @name = params[:name] ||= "Ludwig"
   erb(:index)
 end
